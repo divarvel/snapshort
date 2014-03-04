@@ -1,0 +1,4 @@
+cabal-dev
+dist
+log
+devel.cfg
