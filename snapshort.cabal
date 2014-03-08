@@ -34,11 +34,11 @@ Executable snapshort
     text                      >= 0.11    && < 1.2,
     time                      >= 1.1     && < 1.5,
     xmlhtml                   >= 0.1,
-    aeson,
-    postgresql-simple,
-    snaplet-postgresql-simple,
-    transformers,
-    uuid
+    aeson                     >= 0.7     && < 0.8,
+    postgresql-simple         >= 0.4     && < 0.5,
+    snaplet-postgresql-simple >= 0.4     && < 0.5,
+    transformers              >= 0.3     && < 0.4,
+    uuid                      >= 1.3     && < 1.4
 
   if flag(old-base)
     build-depends:
