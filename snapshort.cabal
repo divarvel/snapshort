@@ -23,7 +23,8 @@ Executable snapshort
   main-is: Main.hs
 
   Build-depends:
-    bytestring                >= 0.9.1   && < 0.11,
+    bytestring                >= 0.10    && < 0.11,
+    base64-bytestring         >= 1.0     && < 1.1,
     heist                     >= 0.13    && < 0.14,
     MonadCatchIO-transformers >= 0.2.1   && < 0.4,
     mtl                       >= 2       && < 3,
