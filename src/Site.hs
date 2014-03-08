@@ -70,7 +70,8 @@ authenticatedAction a = do
         Just _ -> do
             modifyResponse $ setResponseCode 403
         _ -> do
-            modifyResponse $ setResponseCode 401
+            modifyResponse $
+                (setResponseCode 401) . (addHeader "WWW-Authenticate" "Basic realm=\"admin\"")
 
 
 createNewLink :: Handler App App ()
